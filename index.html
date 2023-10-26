@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+    <title>YouTube</title>
+</head>
+<body>
+    <header>
+        <div class="left-icons">
+            <i class="fas fa-bars"></i> <!-- Ícone de lista -->
+            <h1><i class="fab fa-youtube" style="color: #FF0000;"></i>YouTube<sup>BR</sup></h1>
+        </div>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Pesquisar">
+            <i class="fas fa-keyboard keyboard-icon" onclick="showKeyboard()"></i>
+            <i class="fas fa-search search-icon" onclick="performSearch()"></i>
+        </div>
+        <ul class="icons">
+            <li><i class="fas fa-video"></i></li>
+            <li><i class="fas fa-bell"></i></li>
+            <li>
+                <div class="perfil">
+                    <img src="./assets/img/perfil.jpg" alt="Foto de Perfil">
+                </div>
+            </li>
+        </ul>
+    </header>
+    
+    
+    
+    <main>
+        <aside>
+            <ul>
+                <li><i class="fas fa-home icon-bg-transparent"></i> Início</li>
+                <li><i class="fas fa-compass icon-bg-transparent"></i> Explorar</li>
+                <li><i class="fab fa-youtube icon-bg-transparent"></i> Inscrições</li>
+                <li><i class="fas fa-compact-disc icon-bg-transparent"></i> YouTube Music</li>
+                <li><i class="fas fa-thumbs-up icon-bg-transparent"></i> Vídeos que gostei</li>
+                <li><i class="far fa-clock icon-bg-transparent"></i> Assistir mais tarde</li>
+                <li><i class="fas fa-download icon-bg-transparent"></i> Downloads</li>
+                <li><i class="fas fa-film icon-bg-transparent"></i> Filmes</li>
+                <li><i class="fas fa-book icon-bg-transparent"></i> Aprender</li>
+                <li><i class="fas fa-medal icon-bg-transparent"></i> Esportes</li>
+            </ul>
+        </aside>
+        
+        <section class="videos">
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/B6_os-gK7F0?si=an-uk6pLVPsViDxJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="perfil">
+                    <img src="./assets/img/prolife.jpeg" alt="Foto de Perfil">
+                </div>
+                <h3>Título do Vídeo 1</h3>
+                <p>Descrição do vídeo 1</p>
+            </div>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/u-cHl9_reQ0?si=Ev17Y1YO_KkaMfzn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="perfil">
+                    <img src="./assets/img/prolife.jpeg" alt="Foto de Perfil">
+                </div>
+                <h3>Realizando Deploy de uma Aplicação Web em Cloud</h3>
+                <p>DIO<br>4,1 mil visualizações <br>. Transmido há 2 meses</p>
+            </div>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/eL5tVGEuPK8?si=gknygFjFih_g_g73" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="perfil">
+                    <img src="./assets/img/prolife.jpeg" alt="Foto de Perfil">
+                </div>
+                <h3 class="texto-truncado">Criando uma API REST da Copa do Mundo em Kotlin e Spring Boot 3</h3>
+                <p>DIO<br>5,2 mil visualizações <br>. Transmido há 3 meses</p>
+            </div>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/cckRv7UwB_4?si=aszl6JZaHp4Bqz3V" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="perfil">
+                    <img src="./assets/img/prolife.jpeg" alt="Foto de Perfil">
+                </div>
+                <h3>Explorando Prompts de IA Generativa para Criar um Podcast</h3>
+                <p>DIO<br>2,3 mil visualizações <br>. Transmido há 3 meses</p>
+            </div>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/FRdES4ZmxXI?si=cllrNnJi7FjOhtaG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="perfil">
+                    <img src="./assets/img/prolife.jpeg" alt="Foto de Perfil">
+                </div>
+                <h3>Realizando Deploy de uma Aplicação Web em Cloud</h3>
+                <p>DIO<br>4,1 mil visualizações <br>. Transmido há 2 meses</p>
+            </div>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/z-s2NfGuqxo?si=RwFL0uIvWbXzuuz0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="perfil">
+                    <img src="./assets/img/prolife.jpeg" alt="Foto de Perfil">
+                </div>
+                <h3>Criando seu Avatar com Inteligência Artificial Generativa utilizando Java e Microsserviços
+                </h3>
+                <p>DIO<br>921 visualizações <br>. Transmido há 4 meses</p>
+            </div>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/vQyPZAxXHFM?si=ND1SbDrBszBawUcW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="perfil">
+                    <img src="./assets/img/prolife.jpeg" alt="Foto de Perfil">
+                </div>
+                <h3>Como ser mais produtivo nos projetos com React, Vite e Tailwind
+                </h3>
+                <p>DIO<br>1,2 mil visualizações <br>. Transmido há 4 meses</p>
+            </div>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/UdcDPLbdZdI?si=CdcD5L-hXWNDvrsc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="perfil">
+                    <img src="./assets/img/prolife.jpeg" alt="Foto de Perfil">
+                </div>
+                <h3>Criando um Dashboard de Vendas com Power BI: Aprenda na Prática
+                </h3>
+                <p>DIO<br>2,2 mil visualizações <br>. Transmido há 5 meses</p>
+            </div>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/aoCwWYxTqQA?si=8BUwPXIu5Rma_SDd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="perfil">
+                    <img src="./assets/img/prolife.jpeg" alt="Foto de Perfil">
+                </div>
+                <h3>Aprenda a criar sua própria NFT com Photosonic e a Metamask
+                </h3>
+                <p>DIO<br>394 visualizações <br>. Transmido há 5 meses</p>
+            </div>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/KcCotHKryO4?si=m7HIsr9T4_k2mWHJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="perfil">
+                    <img src="./assets/img/prolife.jpeg" alt="Foto de Perfil">
+                </div>
+                <h3>Criando um assistente de voz com o ChatGPT utilizando Whisper (OpenAI) e Python</h3>
+                <p>DIO<br>3 mil visualizações <br>. Transmido há 5 meses</p>
+            </div>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/PSJXhXYcZC0?si=sNBazKxb3hseXo7K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="perfil">
+                    <img src="./assets/img/prolife.jpeg" alt="Foto de Perfil">
+                </div>
+                <h3>Criando um Sistema de Interpretação de Gestos com Python e Machine Learning
+                </h3>
+                <p>DIO<br>699 visualizações <br>. Transmido há 5 meses</p>
+            </div>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Qxm5QEEKHqE?si=Wu467LyRSU589LQg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="perfil">
+                    <img src="./assets/img/prolife.jpeg" alt="Foto de Perfil">
+                </div>
+                <h3>Como criar um projeto do zero com Python | Compartilhando Gráficos Interativos da Covid-19
+                </h3>
+                <p>DIO<br>3,9 mil visualizações <br>. Transmido há 1 ano</p>
+            </div>
+            <!-- Adicione mais vídeos conforme necessário -->
+        </section>
+        
+    </main>
+    <script>
+        function showKeyboard() {
+    // Lógica para mostrar o teclado virtual
+    alert("Teclado virtual está ativo!");
+}
+
+   </script>
+</body>
+</html>
